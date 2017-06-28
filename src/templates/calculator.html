@@ -1,0 +1,71 @@
+<ion-view view-title="simpleCalc" >
+  <ion-content>
+
+    <div class="list list-inset">
+        <label class="item expression"  >
+            <label ng-bind="tempExpression"></label>
+        </label>
+        <label class="item display" ng-bind="operand">
+        </label>
+    </div>
+
+    <div style="margin-top: 40px">
+      <div class="row">
+          <div class="col col-20 col-offset-10">
+              <button class="button button-block button-dark " ng-click="inputDigit(1)">1</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-dark " ng-click="inputDigit(2)">2</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-dark " ng-click="inputDigit(3)">3</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-calm " ng-click="inputOperator('/')">/</button>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col col-20 col-offset-10">
+              <button class="button button-block button-dark " ng-click="inputDigit(4)">4</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-dark " ng-click="inputDigit(5)">5</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-dark " ng-click="inputDigit(6)">6</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-calm ion-icon ion-asterisk  " ng-click="inputOperator('*')"></button>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col col-20 col-offset-10">
+              <button class="button button-block button-dark " ng-click="inputDigit(7)">7</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-dark " ng-click="inputDigit(8)">8</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-dark " ng-click="inputDigit(9)">9</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-calm ion-icon ion-minus " ng-click="inputOperator('-')"></button>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col col-20 col-offset-10">
+              <button class="button button-block button-assertive " ng-click="clear()">C</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-dark " ng-click="inputDigit(0)">0</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-balanced " ng-click="calculate()">=</button>
+          </div>
+          <div class="col col-20">
+              <button class="button button-block button-calm  ion-icon ion-plus" ng-click="inputOperator('+')"></button>
+          </div>
+      </div>
+  </div>
+  </ion-content>
+</ion-view>
